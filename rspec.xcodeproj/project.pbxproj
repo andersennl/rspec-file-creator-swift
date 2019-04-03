@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9F5EBCE922550B47000031DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCE822550B47000031DF /* main.swift */; };
+		9F5EBCF622550B5A000031DF /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCF522550B5A000031DF /* UnitTests.swift */; };
+		9F5EBCFC22550B87000031DF /* RspecCreatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCFB22550B87000031DF /* RspecCreatorTest.swift */; };
+		9F5EBCFE22550BB2000031DF /* RspecCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCFD22550BB2000031DF /* RspecCreator.swift */; };
+		9F5EBCFF22550BB2000031DF /* RspecCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCFD22550BB2000031DF /* RspecCreator.swift */; };
+		9F5EBD0122550CD0000031DF /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBD0022550CD0000031DF /* MyError.swift */; };
+		9F5EBD0222550CD0000031DF /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBD0022550CD0000031DF /* MyError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +31,23 @@
 /* Begin PBXFileReference section */
 		9F5EBCE522550B47000031DF /* rspec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rspec; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5EBCE822550B47000031DF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9F5EBCF322550B5A000031DF /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5EBCF522550B5A000031DF /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		9F5EBCF722550B5A000031DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F5EBCFB22550B87000031DF /* RspecCreatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RspecCreatorTest.swift; sourceTree = "<group>"; };
+		9F5EBCFD22550BB2000031DF /* RspecCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RspecCreator.swift; sourceTree = "<group>"; };
+		9F5EBD0022550CD0000031DF /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9F5EBCE222550B47000031DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5EBCF022550B5A000031DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				9F5EBCE722550B47000031DF /* rspec */,
+				9F5EBCF422550B5A000031DF /* UnitTests */,
 				9F5EBCE622550B47000031DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				9F5EBCE522550B47000031DF /* rspec */,
+				9F5EBCF322550B5A000031DF /* UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +79,20 @@
 			isa = PBXGroup;
 			children = (
 				9F5EBCE822550B47000031DF /* main.swift */,
+				9F5EBD0022550CD0000031DF /* MyError.swift */,
+				9F5EBCFD22550BB2000031DF /* RspecCreator.swift */,
 			);
 			path = rspec;
+			sourceTree = "<group>";
+		};
+		9F5EBCF422550B5A000031DF /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EBCF522550B5A000031DF /* UnitTests.swift */,
+				9F5EBCFB22550B87000031DF /* RspecCreatorTest.swift */,
+				9F5EBCF722550B5A000031DF /* Info.plist */,
+			);
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +115,23 @@
 			productReference = 9F5EBCE522550B47000031DF /* rspec */;
 			productType = "com.apple.product-type.tool";
 		};
+		9F5EBCF222550B5A000031DF /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5EBCF822550B5A000031DF /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				9F5EBCEF22550B5A000031DF /* Sources */,
+				9F5EBCF022550B5A000031DF /* Frameworks */,
+				9F5EBCF122550B5A000031DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 9F5EBCF322550B5A000031DF /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +143,9 @@
 				ORGANIZATIONNAME = "Nikolaj Andersen";
 				TargetAttributes = {
 					9F5EBCE422550B47000031DF = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					9F5EBCF222550B5A000031DF = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
@@ -110,16 +163,40 @@
 			projectRoot = "";
 			targets = (
 				9F5EBCE422550B47000031DF /* rspec */,
+				9F5EBCF222550B5A000031DF /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F5EBCF122550B5A000031DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F5EBCE122550B47000031DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F5EBD0122550CD0000031DF /* MyError.swift in Sources */,
+				9F5EBCFE22550BB2000031DF /* RspecCreator.swift in Sources */,
 				9F5EBCE922550B47000031DF /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5EBCEF22550B5A000031DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5EBD0222550CD0000031DF /* MyError.swift in Sources */,
+				9F5EBCFC22550B87000031DF /* RspecCreatorTest.swift in Sources */,
+				9F5EBCFF22550BB2000031DF /* RspecCreator.swift in Sources */,
+				9F5EBCF622550B5A000031DF /* UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +338,42 @@
 			};
 			name = Release;
 		};
+		9F5EBCF922550B5A000031DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NZ2298R6XY;
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = commandline.andersen.dev.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9F5EBCFA22550B5A000031DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NZ2298R6XY;
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = commandline.andersen.dev.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -278,6 +391,15 @@
 			buildConfigurations = (
 				9F5EBCED22550B47000031DF /* Debug */,
 				9F5EBCEE22550B47000031DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F5EBCF822550B5A000031DF /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5EBCF922550B5A000031DF /* Debug */,
+				9F5EBCFA22550B5A000031DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

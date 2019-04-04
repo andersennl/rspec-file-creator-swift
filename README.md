@@ -6,7 +6,7 @@ This project is written in Swift 5.
 
 Running e.g. 
 
-`./rspeccreator app/controllers/users/signup_controller.rb`
+`rspeccreator app/controllers/users/signup_controller.rb`
 
 creates the following file:
 

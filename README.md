@@ -26,7 +26,7 @@ As you can see, the correct module and class names are automatically parsed and 
 
 ## Setup
 ```
-Download the latest release under the "Releases" tab.
+Download the latest release under the "release" tab [(here)](https://github.com/andersennl/rspec-file-creator-swift/releases).
 ```
 In order to execute the script from everywhere, consider adding the binary to your `PATH`.
 

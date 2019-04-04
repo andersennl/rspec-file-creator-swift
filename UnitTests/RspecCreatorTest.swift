@@ -24,7 +24,7 @@ class RspecCreatorTest: XCTestCase {
     }
     
     func testFileName() {
-        let expected = "shorten_long_social_media_urls.rb"
+        let expected = "shorten_long_social_media_urls_spec.rb"
         
         XCTAssertEqual(creator.fileName(), expected)
     }

@@ -19,7 +19,7 @@ class RspecCreator {
         let specPath = self.originalPath.replacingOccurrences(of: "app/", with: "spec/")
         let url = URL(fileURLWithPath: specPath)
         
-        return url.relativeString.replacingOccurrences(of: fileName(), with: "")
+        return url.relativeString.replacingOccurrences(of: originalFileName(), with: "")
     }
     
     func filePathWithFilename() -> String {
@@ -38,6 +38,12 @@ class RspecCreator {
     }
     
     func fileName() -> String {
+        let url = URL(fileURLWithPath: self.originalPath)
+        
+        return url.lastPathComponent.replacingOccurrences(of: ".rb", with: "_spec.rb")
+    }
+    
+    private func originalFileName() -> String {
         let url = URL(fileURLWithPath: self.originalPath)
         
         return url.lastPathComponent

@@ -25,9 +25,9 @@ end
 As you can see, the correct module and class names are automatically parsed and inserted appropriately into the spec file.
 
 ## Setup
-```
+
 Download the latest release under the "release" tab [(here)](https://github.com/andersennl/rspec-file-creator-swift/releases).
-```
+
 In order to execute the script from everywhere, consider adding the binary to your `PATH`.
 
 If you're using `zsh`, add the following to your `~/.zshrc`:

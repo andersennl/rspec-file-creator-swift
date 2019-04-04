@@ -37,6 +37,7 @@
 		9F5EBCFB22550B87000031DF /* RspecCreatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RspecCreatorTest.swift; sourceTree = "<group>"; };
 		9F5EBCFD22550BB2000031DF /* RspecCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RspecCreator.swift; sourceTree = "<group>"; };
 		9F5EBD0022550CD0000031DF /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
+		9F5EBD2D225697D1000031DF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		9F5EBCDC22550B47000031DF = {
 			isa = PBXGroup;
 			children = (
+				9F5EBD2D225697D1000031DF /* README.md */,
 				9F5EBCE722550B47000031DF /* rspec */,
 				9F5EBCF422550B5A000031DF /* UnitTests */,
 				9F5EBCE622550B47000031DF /* Products */,
@@ -156,6 +158,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 9F5EBCDC22550B47000031DF;
 			productRefGroup = 9F5EBCE622550B47000031DF /* Products */;

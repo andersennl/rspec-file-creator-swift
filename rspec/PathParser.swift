@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RspecCreator {
+class PathParser {
     var originalPath = ""
     
     init(originalPath: String) {

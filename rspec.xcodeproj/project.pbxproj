@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		9F5EBCE922550B47000031DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCE822550B47000031DF /* main.swift */; };
 		9F5EBCF622550B5A000031DF /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCF522550B5A000031DF /* UnitTests.swift */; };
-		9F5EBCFC22550B87000031DF /* RspecCreatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCFB22550B87000031DF /* RspecCreatorTest.swift */; };
-		9F5EBCFE22550BB2000031DF /* RspecCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCFD22550BB2000031DF /* RspecCreator.swift */; };
-		9F5EBCFF22550BB2000031DF /* RspecCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCFD22550BB2000031DF /* RspecCreator.swift */; };
+		9F5EBCFC22550B87000031DF /* PathParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCFB22550B87000031DF /* PathParserTest.swift */; };
+		9F5EBCFE22550BB2000031DF /* PathParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCFD22550BB2000031DF /* PathParser.swift */; };
+		9F5EBCFF22550BB2000031DF /* PathParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBCFD22550BB2000031DF /* PathParser.swift */; };
 		9F5EBD0122550CD0000031DF /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBD0022550CD0000031DF /* MyError.swift */; };
 		9F5EBD0222550CD0000031DF /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EBD0022550CD0000031DF /* MyError.swift */; };
 /* End PBXBuildFile section */
@@ -34,8 +34,8 @@
 		9F5EBCF322550B5A000031DF /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5EBCF522550B5A000031DF /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		9F5EBCF722550B5A000031DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F5EBCFB22550B87000031DF /* RspecCreatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RspecCreatorTest.swift; sourceTree = "<group>"; };
-		9F5EBCFD22550BB2000031DF /* RspecCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RspecCreator.swift; sourceTree = "<group>"; };
+		9F5EBCFB22550B87000031DF /* PathParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathParserTest.swift; sourceTree = "<group>"; };
+		9F5EBCFD22550BB2000031DF /* PathParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathParser.swift; sourceTree = "<group>"; };
 		9F5EBD0022550CD0000031DF /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
 		9F5EBD2D225697D1000031DF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,7 +82,7 @@
 			children = (
 				9F5EBCE822550B47000031DF /* main.swift */,
 				9F5EBD0022550CD0000031DF /* MyError.swift */,
-				9F5EBCFD22550BB2000031DF /* RspecCreator.swift */,
+				9F5EBCFD22550BB2000031DF /* PathParser.swift */,
 			);
 			path = rspec;
 			sourceTree = "<group>";
@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				9F5EBCF522550B5A000031DF /* UnitTests.swift */,
-				9F5EBCFB22550B87000031DF /* RspecCreatorTest.swift */,
+				9F5EBCFB22550B87000031DF /* PathParserTest.swift */,
 				9F5EBCF722550B5A000031DF /* Info.plist */,
 			);
 			path = UnitTests;
@@ -187,7 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F5EBD0122550CD0000031DF /* MyError.swift in Sources */,
-				9F5EBCFE22550BB2000031DF /* RspecCreator.swift in Sources */,
+				9F5EBCFE22550BB2000031DF /* PathParser.swift in Sources */,
 				9F5EBCE922550B47000031DF /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,8 +197,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F5EBD0222550CD0000031DF /* MyError.swift in Sources */,
-				9F5EBCFC22550B87000031DF /* RspecCreatorTest.swift in Sources */,
-				9F5EBCFF22550BB2000031DF /* RspecCreator.swift in Sources */,
+				9F5EBCFC22550B87000031DF /* PathParserTest.swift in Sources */,
+				9F5EBCFF22550BB2000031DF /* PathParser.swift in Sources */,
 				9F5EBCF622550B5A000031DF /* UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,8 @@
 
 import XCTest
 
-class RspecCreatorTest: XCTestCase {
-    let creator = RspecCreator(originalPath: "app/services/network/contacts/shorten_long_social_media_urls.rb")
+class PathParserTest: XCTestCase {
+    let creator = PathParser(originalPath: "app/services/network/contacts/shorten_long_social_media_urls.rb")
     
     func testFilePath() {
         let expected = "spec/services/network/contacts/"

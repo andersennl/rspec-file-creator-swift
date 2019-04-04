@@ -18,7 +18,7 @@ if !filePath.contains("app/") {
 }
 
 //let testPath = "app/services/network/contacts/shorten_long_social_media_urls.rb"
-let creator = RspecCreator(originalPath: filePath)
+let creator = PathParser(originalPath: filePath)
 
 let fileContent = "require \"spec_helper\"\n\ndescribe \(creator.className()) do\n\nend"
 

@@ -12,16 +12,17 @@ guard let filePath = CommandLine.arguments.last else {
     throw MyError.runtimeError("No correct path passed.")
 }
 
+//let testPath = "app/services/network/contacts/shorten_long_social_media_urls.rb"
 let creator = RspecCreator(originalPath: filePath)
 
-//let dir = FileManager.default.createFile(atPath: creator.filePathWithFilename(), contents: <#T##Data?#>, attributes: <#T##[FileAttributeKey : Any]?#>)
-
-let fileContent = ""
-let path = URL.init(fileURLWithPath: "/Users/andersennl/Desktop/test/example.rb")
+let fileContent = "require \"spec_helper\"\n\ndescribe \(creator.className()) do\n\nend"
 
 do {
-    try fileContent.write(to: path, atomically: false, encoding: .utf8)
+    try FileManager.default.createDirectory(atPath: creator.filePath(), withIntermediateDirectories: true, attributes: nil)
+    try fileContent.write(toFile: creator.filePathWithFilename(), atomically: false, encoding: .utf8);
+    print(creator.filePathWithFilename() + " created.")
 }
 catch {
     print("Didn't work")
+    print(error.localizedDescription)
 }

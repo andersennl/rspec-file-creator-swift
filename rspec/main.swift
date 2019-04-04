@@ -9,7 +9,12 @@
 import Foundation
 
 guard let filePath = CommandLine.arguments.last else {
-    throw MyError.runtimeError("No correct path passed.")
+    throw MyError.runtimeError("Something went wrong.")
+}
+
+if !filePath.contains("app/") {
+    print("No correct path passed.")
+    exit(0)
 }
 
 //let testPath = "app/services/network/contacts/shorten_long_social_media_urls.rb"
@@ -23,6 +28,6 @@ do {
     print(creator.filePathWithFilename() + " created.")
 }
 catch {
-    print("Didn't work")
+    print("Something went wrong.")
     print(error.localizedDescription)
 }
